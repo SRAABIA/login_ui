@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 25),
-              Row(
+              const SizedBox(height: 25),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -55,13 +55,61 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Text('Login',
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Rubik Regular',
-                color: Colors.black,
-              ),)
+              const SizedBox(height: 25),
+              const Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Rubik Regular',
+                  color: Colors.black,
+                ),
+              ),
+              const SizedBox(height: 25),
+              Container(
+                height: 50,
+                width: 300,
+                decoration: BoxDecoration(
+                  color: Color(0xffF9703B),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Rubik Regular',
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Don\'t have an account?',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Rubik Regular',
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(width: 5),
+                  Text(
+                    'Sign Up',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Rubik Regular',
+                      color: Color(0xffF9703B),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
