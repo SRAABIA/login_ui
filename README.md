@@ -6,8 +6,7 @@ Additionally, **TextFormField**, **Containers**, and other widgets were used to 
 
 ## 📷 Screenshot
 
-![Login UI](./images/loginUi.jpeg)
-
+<img src="./images/loginUi.jpeg" alt="Login UI" width="350"/>
 ---
 
 ## 📦 Widgets Used
